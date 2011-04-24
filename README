@@ -1,0 +1,6 @@
+適当なmikutterプラグイン
+
+mikutterのpluginディレクトリに放り込むと動くよ
+
+ctrlw.rb
+    Ctrl+wでmikutterを終了する
