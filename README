@@ -1,6 +1,20 @@
 適当なmikutterプラグイン
+========================
 
 mikutterのpluginディレクトリに放り込むと動くよ
 
 ctrlw.rb
     Ctrl+wでmikutterを終了する
+
+
+パッチ
+======
+
+img-close-q.diff  
+    画像ビューアをキーボードの'q'で閉じるパッチ。
+
+view.diff
+    以下2点の変更
+     - Tweetの時間表示に日付を付与する。
+     - 利用しているTwitterクライアントを表示する。
+

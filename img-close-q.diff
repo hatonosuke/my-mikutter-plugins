@@ -1,0 +1,16 @@
+Index: core/addon/openimg.rb
+===================================================================
+--- core/addon/openimg.rb	(リビジョン 287)
++++ core/addon/openimg.rb	(作業コピー)
+@@ -28,6 +28,11 @@
+     w = Gtk::Window.new.set_title("（読み込み中）")
+     w.set_default_size(*@size).move(*@position)
+     w.signal_connect(:destroy){ w.destroy }
++    w.signal_connect(:key_press_event){ |ev, event|
++        if Gtk.keyname([event.keyval ,event.state]) == 'q'
++            w.destroy
++        end
++    }
+     eventbox = Gtk::EventBox.new
+     w.add(eventbox)
+     size = DEFAULT_SIZE
