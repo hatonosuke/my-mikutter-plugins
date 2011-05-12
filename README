@@ -6,6 +6,8 @@ mikutterのpluginディレクトリに放り込むと動くよ
 ctrlw.rb
     Ctrl+wでmikutterを終了する
 
+pluginathome.rb
+    ~/.mikutter_plugin以下のプラグインを読み込む
 
 パッチ
 ======
